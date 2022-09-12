@@ -1,4 +1,4 @@
-#include "Button.h"
+#include "header/Button.h"
 
 Button::Button() {
 	xpos = 0;

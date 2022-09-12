@@ -1,1 +1,1 @@
-g++ environmentTest3.cpp Environment.cpp objects\Text.cpp objects\Button.cpp -Wfatal-errors -IC:\mingw\include\SDL2 -LC:\mingw\lib -w -Wl,-subsystem,windows -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -o environmentTest3
+g++ environmentTest3.cpp GraphicsEnv.cpp objects\Text.cpp objects\Button.cpp -Wfatal-errors -IC:\mingw\include\SDL2 -LC:\mingw\lib -w -Wl,-subsystem,windows -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -o environmentTest3

@@ -1,8 +1,8 @@
-#include "Environment.h"
+#include "../header/GraphicsEnv.h"
 #include <cstdlib>
 
 // create environment
-Environment environment;
+GraphicsEnv environment;
 
 int xpos = environment.getW()/2 - 50;
 int ypos = environment.getH()/2 - 50;
@@ -13,7 +13,7 @@ int yvel = 0;
 int xtarget = 0;
 int ytarget = 0;
 
-drawRects() {
+void drawRects() {
 	// render black square
 	environment.setRenderColor(0x00, 0x00, 0x00, 0xFF);
 	environment.drawRectangle(xpos, ypos, 100, 100);
@@ -31,7 +31,7 @@ int chooseRandomY() {
 	return rand() % environment.getH();
 }
 
-changeRectVel() {
+void changeRectVel() {
 	// if left, go right
 	if (xpos < xtarget) {
 		xvel = 1;
@@ -68,14 +68,14 @@ changeRectVel() {
 	}
 }
 
-changeRectPos() {
+void changeRectPos() {
 	xpos += xvel;
 	ypos += yvel;
 }
 
 int main(int argc, char* args[]) {	
 	// set title
-	environment.setTitle("Environment Test 5");
+	environment.setTitle("GraphicsEnv Test 5");
 	
 	// set width and height of the screen
 	environment.setScreenWidth(700);

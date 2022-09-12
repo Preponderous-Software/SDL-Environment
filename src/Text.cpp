@@ -1,4 +1,4 @@
-#include "Text.h"
+#include "header/Text.h"
 
 Text::Text() {
 	xpos = 0;

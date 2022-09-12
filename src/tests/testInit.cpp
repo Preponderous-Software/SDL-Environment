@@ -1,32 +1,21 @@
-#include "Environment.h"
+#include "../header/GraphicsEnv.h"
 
 int main(int argc, char* args[]) {
 	// create environment
-	Environment environment;
+	GraphicsEnv environment;
 	
 	// set title
-	environment.setTitle("Environment Test 2");
+	environment.setTitle("GraphicsEnv Test 1");
 	
 	// set width and height of the screen
-	environment.setScreenWidth(500);
-	environment.setScreenHeight(500);
+	environment.setScreenWidth(400);
+	environment.setScreenHeight(400);
 	
 	// initialize
 	environment.init();
 	
 	// load media
 	environment.loadMedia();
-	
-	// set font size
-	environment.setFontSize(32);
-	
-	Text myText;
-	SDL_Color textColor = {0x00, 0x00, 0x00, 0xFF};
-	myText.init(25, 25, environment.getFont(), environment.getRenderer(), "Environment Test 2:", textColor);
-	
-	Text myText2;
-	textColor = {0x00, 0x00, 0x00, 0xFF};
-	myText2.init(25, 75, environment.getFont(), environment.getRenderer(), "Text Support", textColor);
 	
 	// main loop
 	while (environment.isRunning()) {
@@ -43,10 +32,6 @@ int main(int argc, char* args[]) {
 		environment.setRenderColor(0x00, 0x00, 0x00, 0xFF);
 		environment.drawRectangle(environment.getW()/2 - 50, environment.getH()/2 - 50, 100, 100);
 		
-		// render text
-		myText.render();
-		myText2.render();
-	
 		// present environment
 		environment.present();
 	}

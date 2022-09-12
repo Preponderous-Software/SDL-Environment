@@ -1,8 +1,9 @@
-#include "Environment.h"
 #include <string>
 
+#include "../header/GraphicsEnv.h"
+
 // create environment
-Environment environment;
+GraphicsEnv environment;
 
 Text myText;
 Text myText2;
@@ -30,10 +31,10 @@ void myButtonFunc() {
 
 int main(int argc, char* args[]) {
 	// create environment
-	Environment environment;
+	GraphicsEnv environment;
 	
 	// set title
-	environment.setTitle("Environment Test 3");
+	environment.setTitle("GraphicsEnv Test 3");
 	
 	// set width and height of the screen
 	environment.setScreenWidth(500);
@@ -50,7 +51,7 @@ int main(int argc, char* args[]) {
 	
 
 	SDL_Color textColor = {0x00, 0x00, 0x00, 0xFF};
-	myText.init(25, 25, environment.getFont(), environment.getRenderer(), "Environment Test 3:", textColor);
+	myText.init(25, 25, environment.getFont(), environment.getRenderer(), "GraphicsEnv Test 3:", textColor);
 	
 	textColor = {0x00, 0x00, 0x00, 0xFF};
 	myText2.init(25, 75, environment.getFont(), environment.getRenderer(), "Button Support", textColor);

@@ -1,20 +1,20 @@
-// goal: build a self-contained environment so I don't have to
+// goal: build a self-contained graphics environment so I don't have to
 //		 do all this stuff every time.
 
-#include <SDL.h>
-#include <SDL_ttf.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_ttf.h>
 #include <string>
 #include <vector>
 #include <fstream>
 
-#include "objects/Text.h"
-#include "objects/Button.h"
+#include "Text.h"
+#include "Button.h"
 
-class Environment {
+class GraphicsEnv {
   public:
 	// tors
-	Environment();
-	~Environment();
+	GraphicsEnv();
+	~GraphicsEnv();
 	
 	// primary methods
 	void init();

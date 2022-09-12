@@ -1,6 +1,6 @@
-#include "Environment.h"
+#include "../header/GraphicsEnv.h"
 
-Environment environment;
+GraphicsEnv environment;
 
 Text headerText;
 
@@ -30,7 +30,7 @@ void drawTextBox() {
 }
 
 int main(int argc, char* args[]) {
-	environment.setTitle("Environment Test 1");
+	environment.setTitle("GraphicsEnv Test 1");
 	environment.setScreenWidth(1000);
 	environment.setScreenHeight(700);
 	

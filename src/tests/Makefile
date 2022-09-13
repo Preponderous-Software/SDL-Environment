@@ -14,4 +14,4 @@ text: testText.cpp
 	g++ testText.cpp $(GLC_FILES) -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -o text_test_executable
 
 button: testButton.cpp
-	g++ testButton.cpp $(GLC_FILES) -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -o buttonsudo_test_executable
+	g++ testButton.cpp $(GLC_FILES) -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -o button_test_executable

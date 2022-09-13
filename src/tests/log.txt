@@ -1,0 +1,3 @@
+Initializing!
+Font is NULL!
+Cleaning up!
